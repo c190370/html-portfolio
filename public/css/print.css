@@ -1,0 +1,180 @@
+
+@page{
+    size: A4 portrait;
+    margin: 0mm;
+}
+.page{
+	width: 210mm;
+	height: 297mm;
+	box-sizing: border-box;
+	padding: 10mm 0;
+  
+
+}
+body {
+  /* font-family: -apple-system,BlinkMacSystemFont,KintoSans-Regular; */
+  /* width: 100%;
+  margin: 10px 15px; */
+  font-family: 'Noto Sans JP', sans-serif;
+  word-wrap: break-word; /* IEやFirefox対応用 */
+  overflow-wrap: break-word;
+
+}
+
+.invoice_print{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 0 30px 0;
+}
+
+.invoice_print span{
+  padding: 5px;
+  color: #ffffff;
+  background-color: #096fb3;
+  border-radius: 5px;
+}
+
+.invoice_print span:hover{
+  position: relative;
+  top: 1px;
+  left: 1px;
+  color: #ffffff;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.frame{
+  margin: 0 0 30px 0;
+  padding: 5px;
+  border: solid 1px #cccccc;
+}
+
+table{
+  border-collapse:  collapse; 
+}
+
+td{
+  padding: 5px;
+  color: #000000;
+  border: solid 1px #666666;
+}
+
+
+.title{
+  width: 100%;
+  text-align: center;
+  border-bottom: solid 3px #e2ddac;
+}
+
+.sub-title{
+  font-size: 16px;
+}
+
+.area_1{
+  width: 98%;
+  margin: 20px auto 0 auto;
+}
+
+.area_2{
+  width: 98%;
+  margin: 35px auto 0 auto;
+}
+
+.area_2 table{
+  width: 100%;
+  font-size: 14px;
+}
+
+.area_3{
+  page-break-before: always;
+  width: 98%;
+  height: 297mm;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.area_3 table{
+  width: 100%;
+}
+
+.caption{
+  border: none;
+  font-weight: 900;
+}
+
+.table_caption{
+  padding: 0 0 12px 0;
+  font-size: 20px;
+}
+
+.line_caption{
+  padding: 0 0 8px 0;
+  font-size: 17px;
+}
+
+.dial_caption{
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.terms_caption{
+  margin: 5px 0 0 0;
+  font-weight: 900;
+  font-size: 19px;
+}
+
+.list_box{
+  font-size: 14px;
+  border-top: solid 1px #b6b6b6;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+
+.terms{
+  width: 140% !important;
+  margin-top: -220px;
+  margin-left: -155px;
+  font-size:10px;
+  -webkit-transform:scale(0.7);
+  -moz-transform:scale(0.7);
+  -ms-transform:scale(0.7);
+  -o-transform:scale(0.7);
+  transform:scale(0.7);
+}
+
+.terms td{
+  padding: 0 20px 0 10px;
+  border: none;
+}
+
+.mark{
+  float: right;
+  width: 10%;
+  height: 70px;
+  line-height: 50px;
+  margin: 0 10% 0 0;
+  font-size: 24px;
+  text-align: center;
+  background-color: #beb668;    
+}
+
+@media print{
+  .non_print{
+    display: none
+  }
+
+  .page{
+    margin: 0;
+    padding: 0;
+  }
+
+  .frame{
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+}
